@@ -1,0 +1,69 @@
+.homeComp {
+  height: 25%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  .aniCont {
+    text-align: center;
+    height: 100%;
+    .typed {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 1.6em; // minimum value
+      --val: 5vw; // preferred value = 5% viewport width
+      --max: 4em; // maximum value
+      text-transform: uppercase;
+
+      color: $bg-color-black;
+      text-shadow: 0px 0px 8px $bg-color-red;
+    }
+    h3 {
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 2em; // minimum value
+      --val: 2vw; // preferred value = 5% viewport width
+      --max: 1.6em; // maximum value
+      text-transform: uppercase;
+      margin-top: 1rem;
+      color: $bg-color-white;
+    }
+    .portfolio {
+      -webkit-animation-delay: 4.4s;
+      font-size: 1.4rem;
+    }
+    .iconLinks {
+      margin-top: 1.5rem;
+      a {
+        margin: 1rem;
+        font-size: 2rem;
+        color: $bg-color-white;
+        .icon:hover {
+          transition: all 0.2s;
+          transform: scale(1.2);
+          color: $pure-white;
+        }
+      }
+
+      a:first-child {
+        -webkit-animation-delay: 4.6s;
+      }
+      a:nth-child(2) {
+        -webkit-animation-delay: 4.8s;
+      }
+      a:nth-child(3) {
+        -webkit-animation-delay: 5s;
+      }
+    }
+  }
+  .line {
+    border: 2px solid $bg-color-black;
+    border-radius: 2rem;
+    margin: 1rem auto;
+    width: 40%;
+    max-width: 24rem;
+    -webkit-animation-delay: 5.2s;
+    -webkit-box-shadow: 0px 0px 10px 0px $bg-color-red;
+    box-shadow: 0px 0px 10px 0px $bg-color-red;
+  }
+}

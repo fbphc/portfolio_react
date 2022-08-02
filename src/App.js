@@ -22,7 +22,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      <Footer />
+      
     </div>
   );
 }

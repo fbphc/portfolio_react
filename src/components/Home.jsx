@@ -1,9 +1,64 @@
-import React from 'react'
+import React from "react";
+import Typed from "react-typed";
+import { Link } from "react-router-dom";
+import { FaFilePdf } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+import "animate.css";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <div className="homeComp">
+        <div className="aniCont">
+          <h2 className="typed animate__animated animate__fadeInDown">
+            Fabio Petrella
+          </h2>
+
+          <h2 className="typed">
+            <Typed
+              strings={["full stack", "web developer"]}
+              typeSpeed={60}
+              backSpeed={60}
+              cursorChar={""}
+              startDelay={600}
+            />
+          </h2>
+          <h3 className="animate__animated animate__fadeInDown portfolio">
+            Personal Portfolio
+          </h3>
+            <div className="animate__animated animate__zoomIn line"></div>
+          <div className="iconLinks">
+            <a
+              href="https://github.com/fbphc"
+              target="_blank"
+              rel="noreferrer"
+              className="animate__animated animate__zoomIn"
+            >
+              <FaFilePdf className="icon" />
+            </a>
+            <a
+              href="https://github.com/fbphc"
+              target="_blank"
+              rel="noreferrer"
+              className="animate__animated animate__zoomIn"
+            >
+              <FaGithub className="icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fabio-petrella-676417b5/"
+              target="_blank"
+              rel="noreferrer"
+              className="animate__animated animate__zoomIn"
+            >
+              <FaLinkedin className="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;

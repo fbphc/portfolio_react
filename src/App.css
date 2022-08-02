@@ -1,6 +1,8 @@
 /* --- COLORS --- */
 /* --- FONTS --- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -17,8 +19,8 @@
 
 body {
   font-family: "Segoe UI", "Gill Sans", "Trebuchet MS", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(99%, black)), url(../img/abstract002x.jpg) center/cover no-repeat;
-  background: linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 50%, black 99%), url(../img/abstract002x.jpg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(99%, black)), url(../img/abstract002.jpg) center/cover no-repeat;
+  background: linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 50%, black 99%), url(../img/abstract002.jpg) center/cover no-repeat;
   height: 100vh;
 }
 
@@ -83,5 +85,134 @@ body::-webkit-scrollbar {
 .footer .linksFooter i {
   font-size: 1.6rem;
   margin-right: 1.4rem;
+}
+
+.homeComp {
+  height: 25%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.homeComp .aniCont {
+  text-align: center;
+  height: 100%;
+}
+
+.homeComp .aniCont .typed {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1.6em;
+  --val: 5vw;
+  --max: 4em;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 0px 0px 8px rgba(253, 171, 108, 0.993);
+}
+
+.homeComp .aniCont h3 {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 2em;
+  --val: 2vw;
+  --max: 1.6em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: rgba(238, 238, 238, 0.782);
+}
+
+.homeComp .aniCont .portfolio {
+  -webkit-animation-delay: 4.4s;
+  font-size: 1.4rem;
+}
+
+.homeComp .aniCont .iconLinks {
+  margin-top: 1.5rem;
+}
+
+.homeComp .aniCont .iconLinks a {
+  margin: 1rem;
+  font-size: 2rem;
+  color: rgba(238, 238, 238, 0.782);
+}
+
+.homeComp .aniCont .iconLinks a .icon:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: white;
+}
+
+.homeComp .aniCont .iconLinks a:first-child {
+  -webkit-animation-delay: 4.6s;
+}
+
+.homeComp .aniCont .iconLinks a:nth-child(2) {
+  -webkit-animation-delay: 4.8s;
+}
+
+.homeComp .aniCont .iconLinks a:nth-child(3) {
+  -webkit-animation-delay: 5s;
+}
+
+.homeComp .line {
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  width: 40%;
+  max-width: 24rem;
+  -webkit-animation-delay: 5.2s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(253, 171, 108, 0.993);
+  box-shadow: 0px 0px 10px 0px rgba(253, 171, 108, 0.993);
+}
+
+.proComp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template: " a b d" 1fr " a b e" 1fr " c c e" 1fr / 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.projects-grid .box {
+  border: 1px solid black;
+  background-color: #fafafa;
+}
+
+.projects-grid .box-1 {
+  grid-area: a;
+}
+
+.projects-grid .box-2 {
+  grid-area: b;
+}
+
+.projects-grid .box-3 {
+  grid-area: c;
+}
+
+.projects-grid .box-4 {
+  grid-area: d;
+}
+
+.projects-grid .box-5 {
+  grid-area: e;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */
