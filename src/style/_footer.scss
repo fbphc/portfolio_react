@@ -7,15 +7,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        margin-left: 1rem;
     }
-    .linksFooter{
-        display: flex;
-        i{
-            font-size: 1.6rem;
-            margin-right: 1.4rem;
-        }
-    }
+    
 }

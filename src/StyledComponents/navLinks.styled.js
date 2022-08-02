@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavLinks = styled(Link)`
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(255, 155, 73);
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   position: relative;
 
   &::after {

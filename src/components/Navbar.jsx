@@ -7,14 +7,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">
+        
           <img src={logo} alt="logo" />
-        </Link>
+        
       </div>
       <div>
-        <NavLinks to="/about">About Me</NavLinks>
+        <NavLinks to="/">About Me</NavLinks>
         <NavLinks to="/projects">Projects</NavLinks>
-        <NavLinks to="/skills">Skills</NavLinks>
         <NavLinks to="/contacts">Contact</NavLinks>
       </div>
     </nav>
