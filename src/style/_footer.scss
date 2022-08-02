@@ -1,0 +1,21 @@
+.footer{
+    position: absolute;
+    bottom: 0%;
+    color: $bg-color-white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1250700963979342) 80%);
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-size: 0.8rem;
+    }
+    .linksFooter{
+        display: flex;
+        i{
+            font-size: 1.6rem;
+            margin-right: 1.4rem;
+        }
+    }
+}

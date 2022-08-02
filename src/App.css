@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* --- COLORS --- */
+/* --- FONTS --- */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  /* Hide scrollbar - IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar - Firefox */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Segoe UI", "Gill Sans", "Trebuchet MS", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(99%, black)), url(../img/abstract002x.jpg) center/cover no-repeat;
+  background: linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 50%, black 99%), url(../img/abstract002x.jpg) center/cover no-repeat;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.18);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .logo {
+  margin-top: 0.2rem;
+  width: 4.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .logo img {
+  width: 100%;
+  opacity: 0.8;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  color: rgba(238, 238, 238, 0.782);
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(80%, rgba(0, 0, 0, 0.12507)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.12507) 80%);
+  height: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.footer .linksFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .linksFooter i {
+  font-size: 1.6rem;
+  margin-right: 1.4rem;
+}
+/*# sourceMappingURL=App.css.map */

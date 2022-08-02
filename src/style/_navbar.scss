@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: $bg-color-black-lighter;
+  .logo {
+    margin-top: 0.2rem;
+    width: 4.5rem;
+    img {
+      width: 100%;
+      opacity: 0.8;
+    }
+  }
+}
