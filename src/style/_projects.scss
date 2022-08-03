@@ -1,14 +1,14 @@
 .proComp {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 h2 {
   color: $bg-color-white;
-  text-align: center;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -16,28 +16,51 @@ h2 {
 .projects-grid {
   display: grid;
   grid-template:
-    " a b d" 1fr
-    " a b e" 1fr
-    " c c e" 1fr
-    / 1fr 1fr 1fr;
+  " a b d" 1fr
+  " a b e" 1fr
+  " c c e" 1fr
+  / 1fr 1fr 1fr;
   gap: 1rem;
-
-  height: 24rem;
+  width: 60%;
+  max-width: 50rem;
+  height: 22rem;
   .box {
     border: 1px solid black;
     overflow: hidden;
     border: 1px solid $bg-color-red;
-    //background-color: rgb(250, 250, 250);
+    cursor: pointer;
   }
   .sub-box {
     transition: all 0.5s;
   }
+  .boxDescription {
+    opacity: 0;
+    bottom: 0%;
+    text-transform: uppercase;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: $bg-color-orange;
+  }
   .sub-box:hover {
     transform: scale(1.1);
+    .boxDescription {
+      opacity: 1;
+      transform: translateY(0px);
+      font-size: clamp(var(--min), var(--val), var(--max));
+      --min: 0.5em; // minimum value
+      --val: 1vw; // preferred value = 5% viewport width
+      --max: 1.2em; // maximum value
+      color: $bg-color-white;
+    }
   }
   .box-1 {
     grid-area: a;
     border-radius: 70% 0 0 0;
+    -webkit-animation-delay: 1.4s;
 
     .sub-box-1 {
       width: 100%;
@@ -47,6 +70,8 @@ h2 {
   }
   .box-2 {
     grid-area: b;
+    -webkit-animation-delay: 1.6s;
+
     .sub-box-2 {
       width: 100%;
       height: 100%;
@@ -55,14 +80,18 @@ h2 {
   }
   .box-3 {
     grid-area: c;
+    -webkit-animation-delay: 2.2s;
+
     .sub-box-3 {
       width: 100%;
       height: 100%;
-      background: url(../img/terGame.gif);
+      background: url(../img/terGame.gif) center / cover no-repeat;
     }
   }
   .box-4 {
     grid-area: d;
+    -webkit-animation-delay: 1.8s;
+
     .sub-box-4 {
       width: 100%;
       height: 100%;
@@ -72,6 +101,8 @@ h2 {
   .box-5 {
     grid-area: e;
     border-radius: 0 0 70% 0;
+    -webkit-animation-delay: 2s;
+
     .sub-box-5 {
       width: 100%;
       height: 100%;

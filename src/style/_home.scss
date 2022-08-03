@@ -9,16 +9,7 @@
   .aniCont {
     text-align: center;
     height: 100%;
-    .typed {
-      font-size: clamp(var(--min), var(--val), var(--max));
-      --min: 1.6em; // minimum value
-      --val: 5vw; // preferred value = 5% viewport width
-      --max: 4em; // maximum value
-      text-transform: uppercase;
-
-      color: $bg-color-black;
-      text-shadow: 0px 0px 4px $bg-color-red;
-    }
+    
     h3 {
       font-size: clamp(var(--min), var(--val), var(--max));
       --min: 2em; // minimum value

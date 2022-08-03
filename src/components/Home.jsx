@@ -1,6 +1,5 @@
 import React from "react";
 import Typed from "react-typed";
-import { Link } from "react-router-dom";
 import { FaFilePdf } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";

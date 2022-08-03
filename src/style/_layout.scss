@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
   -ms-overflow-style: none; /* Hide scrollbar - IE and Edge */
   scrollbar-width: none; /* Hide scrollbar - Firefox */
+
 }
 body {
   font-family: $body-font;
@@ -21,8 +22,20 @@ body {
     ),
     url(../img/abstract002x.jpg) center / cover no-repeat;
   height: 100vh;
+  
 }
 body::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.typed {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1.6em; // minimum value
+  --val: 5vw; // preferred value = 5% viewport width
+  --max: 4em; // maximum value
+  text-transform: uppercase;
+
+  color: $bg-color-black;
+  text-shadow: 0px 0px 4px $bg-color-red;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLinks } from "../StyledComponents/navLinks.styled.js";
 import logo from "../img/logo_small_orange.png";
-import { Link } from "react-router-dom";
+
 
 function Navbar() {
   return (
