@@ -29,6 +29,16 @@ body::-webkit-scrollbar {
   /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
+.typed {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1.6em;
+  --val: 5vw;
+  --max: 4em;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 0px 0px 4px rgba(253, 171, 108, 0.753);
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +69,7 @@ body::-webkit-scrollbar {
   color: rgba(238, 238, 238, 0.782);
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(80%, rgba(0, 0, 0, 0.12507)));
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.12507) 80%);
-  height: 3rem;
+  height: 1rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,16 +101,6 @@ body::-webkit-scrollbar {
 .homeComp .aniCont {
   text-align: center;
   height: 100%;
-}
-
-.homeComp .aniCont .typed {
-  font-size: clamp(var(--min), var(--val), var(--max));
-  --min: 1.6em;
-  --val: 5vw;
-  --max: 4em;
-  text-transform: uppercase;
-  color: black;
-  text-shadow: 0px 0px 4px rgba(253, 171, 108, 0.753);
 }
 
 .homeComp .aniCont h3 {
@@ -161,17 +161,25 @@ body::-webkit-scrollbar {
 
 .proComp {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 60%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 h2 {
   color: rgba(238, 238, 238, 0.782);
-  text-align: center;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -181,13 +189,16 @@ h2 {
   display: grid;
   grid-template: " a b d" 1fr " a b e" 1fr " c c e" 1fr / 1fr 1fr 1fr;
   gap: 1rem;
-  height: 24rem;
+  width: 60%;
+  max-width: 50rem;
+  height: 22rem;
 }
 
 .projects-grid .box {
   border: 1px solid black;
   overflow: hidden;
   border: 1px solid rgba(253, 171, 108, 0.753);
+  cursor: pointer;
 }
 
 .projects-grid .sub-box {
@@ -195,14 +206,47 @@ h2 {
   transition: all 0.5s;
 }
 
+.projects-grid .boxDescription {
+  opacity: 0;
+  bottom: 0%;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+  background-color: rgba(255, 111, 0, 0.5);
+}
+
 .projects-grid .sub-box:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+.projects-grid .sub-box:hover .boxDescription {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 0.5em;
+  --val: 1vw;
+  --max: 1.2em;
+  color: rgba(238, 238, 238, 0.782);
+}
+
 .projects-grid .box-1 {
   grid-area: a;
   border-radius: 70% 0 0 0;
+  -webkit-animation-delay: 1.4s;
 }
 
 .projects-grid .box-1 .sub-box-1 {
@@ -213,6 +257,7 @@ h2 {
 
 .projects-grid .box-2 {
   grid-area: b;
+  -webkit-animation-delay: 1.6s;
 }
 
 .projects-grid .box-2 .sub-box-2 {
@@ -223,16 +268,18 @@ h2 {
 
 .projects-grid .box-3 {
   grid-area: c;
+  -webkit-animation-delay: 2.2s;
 }
 
 .projects-grid .box-3 .sub-box-3 {
   width: 100%;
   height: 100%;
-  background: url(../img/terGame.gif);
+  background: url(../img/terGame.gif) center/cover no-repeat;
 }
 
 .projects-grid .box-4 {
   grid-area: d;
+  -webkit-animation-delay: 1.8s;
 }
 
 .projects-grid .box-4 .sub-box-4 {
@@ -244,11 +291,147 @@ h2 {
 .projects-grid .box-5 {
   grid-area: e;
   border-radius: 0 0 70% 0;
+  -webkit-animation-delay: 2s;
 }
 
 .projects-grid .box-5 .sub-box-5 {
   width: 100%;
   height: 100%;
   background: url(../img/001.png);
+}
+
+.proCardComp {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 80%;
+  max-width: 60rem;
+  background-color: black;
+  border: 2px solid rgba(253, 171, 108, 0.753);
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(255, 111, 0, 0.5) 0px 7px 29px 0px;
+          box-shadow: rgba(255, 111, 0, 0.5) 0px 7px 29px 0px;
+  position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.proCardComp div {
+  margin: 0.5% 0;
+}
+
+.proCardComp h3 {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1.6em;
+  --val: 1.3vw;
+  --max: 1.6em;
+  color: rgba(238, 238, 238, 0.782);
+  text-transform: uppercase;
+}
+
+.proCardComp p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+  --min: 1.6em;
+  --val: 1vw;
+  --max: 1em;
+  color: rgba(238, 238, 238, 0.782);
+}
+
+.proCardComp .imgCont {
+  width: 80%;
+}
+
+.proCardComp .imgCont img {
+  width: 100%;
+  display: block;
+  border-radius: 1%;
+}
+
+.proCardComp .toolsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.proCardComp .toolsCont .tools {
+  color: rgba(253, 171, 108, 0.753);
+  padding: 0.3rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+.formCont {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 60rem;
+  text-align: center;
+}
+
+.formCont form {
+  color: rgba(253, 171, 108, 0.753);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.formCont form div {
+  width: 100%;
+}
+
+.formCont form .lineForm {
+  width: 100%;
+  border: 1px solid rgba(253, 171, 108, 0.753);
+  margin-bottom: 1rem;
+}
+
+.formCont form input,
+.formCont form textarea {
+  color: rgba(238, 238, 238, 0.782);
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.formCont form textarea {
+  border: 1px solid rgba(253, 171, 108, 0.753);
+  margin-top: 0.5rem;
+}
+
+.formCont form input:focus,
+.formCont form textarea:focus {
+  outline: none;
 }
 /*# sourceMappingURL=App.css.map */

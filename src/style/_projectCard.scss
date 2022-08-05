@@ -15,9 +15,44 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .daje {
-    height: 80%;
-    width: 40%;
-    background-color: white;
+  flex-direction: column;
+  color: $pure-white;
+  text-align: center;
+  padding: 5%;
+  div {
+    margin: 0.5% 0;
+  }
+  h3 {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1.6em; // minimum value
+    --val: 1.3vw; // preferred value = 5% viewport width
+    --max: 1.6em; // maximum value
+    color: $bg-color-white;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 1.6em; // minimum value
+    --val: 1vw; // preferred value = 5% viewport width
+    --max: 1em; // maximum value
+    color: $bg-color-white;
+  }
+  .imgCont {
+    width: 80%;
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 1%;
+    }
+  }
+  .toolsCont {
+    display: flex;
+    .tools {
+      color: $bg-color-red;
+      padding: 0.3rem;
+      margin: 0 1rem;
+      text-transform: uppercase;
+    }
   }
 }
