@@ -31,40 +31,30 @@ export const ContactUs = () => {
       <h2 className="animate__animated animate__fadeInDown typed">Contact</h2>
 
       <form ref={form} onSubmit={sendEmail}>
-
-        <div className="animate__animated animate__fadeInDown">
+        <div className="animate__animated animate__fadeInDown input01">
           <input type="text" name="name" placeholder="Name" required />
           <div className="lineForm"></div>
         </div>
 
-        <div className="animate__animated animate__fadeInDown">
-          <input
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            required
-          />
+        <div className="animate__animated animate__fadeInDown input02">
+          <input type="email" name="email" placeholder="E-mail" required />
           <div className="lineForm"></div>
         </div>
 
-        <div className="animate__animated animate__fadeInDown">
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
+        <div className="animate__animated animate__fadeInDown input03">
+          <input type="text" name="subject" placeholder="Subject" required />
           <div className="lineForm"></div>
         </div>
 
         <textarea
+          className="animate__animated animate__fadeIn input04"
           name="message"
           rows={6}
           maxLength={400}
           required
         />
 
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send" className="animate__animated animate__fadeIn input05"/>
       </form>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import Typed from "react-typed";
-import {proArray} from "../helper/dataset.js"
+import {proArray} from "../dataset/dataset.js"
 import "animate.css";
 
 function Projects() {
@@ -25,7 +25,7 @@ function Projects() {
             return (
               <div
                 className={`box box-${item.id} animate__animated  animate__fadeInUp`}
-                key={item.id + ""}
+                key={item.id + "key"}
                 onClick={() => {
                   setInfo(item);
                   setToggle(true);
