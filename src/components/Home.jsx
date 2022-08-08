@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+//import Typed from "react-typed";
 import { FaFilePdf } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -16,13 +16,13 @@ function Home() {
           </h2>
 
           <h2 className="typed">
-            <Typed
+           {/*  <Typed
               strings={["full stack", "web developer"]}
               typeSpeed={60}
               backSpeed={60}
               cursorChar={""}
               startDelay={600}
-            />
+            /> */}
           </h2>
           <h3 className="animate__animated animate__fadeInDown portfolio">
             Personal Portfolio

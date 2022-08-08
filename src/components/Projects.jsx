@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import Typed from "react-typed";
+//import Typed from "react-typed";
 import {proArray} from "../dataset/dataset.js"
 import "animate.css";
 
@@ -13,12 +13,12 @@ function Projects() {
       {toggle && <ProjectCard props={info}/>}
       <div className="proComp" onClick={() => toggle && setToggle(false)}>
         <h2 className="animate__animated animate__fadeIn typed">
-          <Typed
+          {/* <Typed
             strings={["Projects"]}
             typeSpeed={60}
             cursorChar={""}
             startDelay={600}
-          />
+          /> */}
         </h2>
         <div className="projects-grid">
           {proArray.map((item) => {
