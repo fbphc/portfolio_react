@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-//mport Typed from "react-typed";
+
 import Typewriter from "typewriter-effect"
 
 import {proArray} from "../dataset/dataset.js"
@@ -17,14 +17,7 @@ function Projects() {
       <h2  className="typed">    
       <Typewriter options={{delay: 60, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(500).typeString("projects").start()} />
       </h2>
-
         <h2 className="animate__animated animate__fadeIn typed">
-          {/* <Typed
-            strings={["Projects"]}
-            typeSpeed={60}
-            cursorChar={""}
-            startDelay={600}
-          /> */}
         </h2>
         <div className="projects-grid">
           {proArray.map((item) => {

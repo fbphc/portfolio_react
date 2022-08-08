@@ -1,5 +1,4 @@
 import React from "react";
-//import Typed from "react-typed";
 import Typewriter from "typewriter-effect"
 import { FaFilePdf } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -17,16 +16,10 @@ function Home() {
           </h2>
           <h2  className="typed">
 
-          <Typewriter options={{delay: 55, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(800).typeString("full stack").pauseFor(600).deleteAll().changeDelay(60).typeString("web developer").start()} />
+          <Typewriter options={{delay: 60, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(800).typeString("full stack").pauseFor(600).deleteAll().pauseFor(300).typeString("web developer").start()} />
           </h2>
           <h2>
-           {/*  <Typed
-              strings={["full stack", "web developer"]}
-              typeSpeed={60}
-              backSpeed={60}
-              cursorChar={""}
-              startDelay={600}
-            /> */}
+           
           </h2>
           <h3 className="animate__animated animate__fadeInDown portfolio">
             Personal Portfolio

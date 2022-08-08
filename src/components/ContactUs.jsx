@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import {ButtonStyled} from "../StyledComponents/button.styled.js";
+import Typewriter from "typewriter-effect"
 import "animate.css";
 
 export const ContactUs = () => {
@@ -29,7 +30,9 @@ export const ContactUs = () => {
   return (
     <div className="formCont">
       <h2 className="animate__animated animate__fadeInDown typed">Contact</h2>
-
+      <h3  className="portfolio">    
+      <Typewriter options={{delay: 60, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(500).typeString("projects").start()} />
+      </h3>
       <form ref={form} onSubmit={sendEmail}>
         <div className="animate__animated animate__fadeInDown input01">
           <input type="text" name="name" placeholder="Name" required />
@@ -54,7 +57,7 @@ export const ContactUs = () => {
           required
         />
 
-        <input type="submit" value="Send" className="animate__animated animate__fadeIn input05"/>
+        <ButtonStyled type="submit" className="animate__animated animate__fadeIn input05">Send</ButtonStyled>
       </form>
     </div>
   );
