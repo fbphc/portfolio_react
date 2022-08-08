@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import {ButtonStyled} from "../StyledComponents/button.styled.js";
-import Typewriter from "typewriter-effect"
 import "animate.css";
 
 export const ContactUs = () => {
