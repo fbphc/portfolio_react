@@ -1,17 +1,14 @@
 import React from "react";
 import "animate.css";
-
-import a001 from "../img/a001.jpg"
-import a002 from "../img/a002.jpg"
-import a003 from "../img/a003.jpg"
-import a004 from "../img/a004.jpg"
-
-
-import terGame from "../img/terGame.gif";
+import a01 from "../img/01mini.gif";
+import a02 from "../img/02sight.gif";
+import a03 from "../img/03bulls.gif";
+import a04 from "../img/04bur.gif";
+import a05 from "../img/05may.png";
 
 function ProjectCard({ props }) {
-  const imgArray = [a001, a002,terGame, a003, a004 ];
-  
+  const imgArray = [a01, a02, a03, a05, a04];
+
   return (
     <>
       <div className="proCardComp animate__animated animate__fadeIn">
@@ -20,20 +17,25 @@ function ProjectCard({ props }) {
           <h3>{props.subTitle}</h3>
         </div>
         <div className="imgCont">
-          <img src={imgArray[props.id -1]} alt="project" />
+          <img src={imgArray[props.id - 1]} alt="project" />
         </div>
         <div>
           <p>{props.description}</p>
-          <p>{props.inProgress}</p>
+          {props.inProgress && <p className="inProgress">In Progress</p>}
         </div>
         <div className="toolsCont">
           {props.info !== undefined &&
-            props.info.map((item, idx) => <div className="tools" key={idx + ""}>{item}</div>)}
+            props.info.map((item, idx) => (
+              <div className="tools" key={idx + ""}>
+                {item}
+              </div>
+            ))}
         </div>
 
         <div>
           <button>github</button>
-          <button>page</button>
+          {props.extLink && <button>page</button>}
+          
         </div>
       </div>
     </>

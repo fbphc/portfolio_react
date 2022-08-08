@@ -37,8 +37,12 @@
     --max: 1em; // maximum value
     color: $bg-color-white;
   }
+  .inProgress{
+    color: $bg-color-red;
+    font-size: 1.2rem;
+  }
   .imgCont {
-    width: 80%;
+    width: 75%;
 overflow: hidden;
     img {
       width: 100%;
