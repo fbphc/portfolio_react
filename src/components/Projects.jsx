@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-//import Typed from "react-typed";
+//mport Typed from "react-typed";
+import Typewriter from "typewriter-effect"
+
 import {proArray} from "../dataset/dataset.js"
 import "animate.css";
 
@@ -12,6 +14,10 @@ function Projects() {
     <>
       {toggle && <ProjectCard props={info}/>}
       <div className="proComp" onClick={() => toggle && setToggle(false)}>
+      <h2  className="typed">    
+      <Typewriter options={{delay: 60, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(500).typeString("projects").start()} />
+      </h2>
+
         <h2 className="animate__animated animate__fadeIn typed">
           {/* <Typed
             strings={["Projects"]}
