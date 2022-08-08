@@ -19,6 +19,8 @@ function Projects() {
       </h2>
         <h2 className="animate__animated animate__fadeIn typed">
         </h2>
+        <div className="animate__animated animate__zoomIn line"></div>
+
         <div className="projects-grid">
           {proArray.map((item) => {
             return (

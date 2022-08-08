@@ -9,7 +9,7 @@
   .aniCont {
     text-align: center;
     height: 100%;
-    
+
     h3 {
       font-size: clamp(var(--min), var(--val), var(--max));
       --min: 2em; // minimum value
@@ -22,17 +22,17 @@
     .portfolio {
       -webkit-animation-delay: 4.8s;
       font-size: 1.4rem;
+      text-shadow: 0px 0px 2px $pure-white;
     }
     .iconLinks {
       margin-top: 1.5rem;
       a {
         margin: 1rem;
         font-size: 2rem;
-        color: $bg-color-white;
+        color: $bg-color-light-gray;
         .icon:hover {
           transition: all 0.2s;
           color: $bg-color-red;
-          
         }
       }
 
@@ -48,13 +48,13 @@
     }
   }
   .line {
-    border: 2px solid $bg-color-black;
+    border: 2px solid $bg-color-orange;
     border-radius: 2rem;
     margin: 1rem auto;
     width: 40%;
     max-width: 24rem;
     -webkit-animation-delay: 5.6s;
-    -webkit-box-shadow: 0px 0px 6px 0px $bg-color-red;
-    box-shadow: 0px 0px 10px 0px $bg-color-red;
+    /* -webkit-box-shadow: 0px 0px 6px 0px $bg-color-red;
+    box-shadow: 0px 0px 20px 0px $bg-color-red; */
   }
 }

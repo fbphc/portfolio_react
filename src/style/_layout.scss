@@ -35,7 +35,14 @@ body::-webkit-scrollbar {
   --max: 4em; // maximum value
   text-transform: uppercase;
 
-  color: $bg-color-white;
-  //text-shadow: 0px 0px 10px $bg-color-red;
+  color: $bg-color-light-gray;
 }
 
+.line {
+  border: 2px solid $bg-color-orange;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  width: 40%;
+  max-width: 24rem;
+  -webkit-animation-delay: 5.6s;
+}

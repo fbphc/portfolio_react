@@ -9,10 +9,12 @@
 }
 h2 {
   color: $bg-color-white;
-  margin-bottom: 2rem;
   text-transform: uppercase;
+  
 }
-
+.line{
+  -webkit-animation-delay: 1.6s;
+}
 .projects-grid {
   display: grid;
   grid-template:

@@ -30,9 +30,11 @@ export const ContactUs = () => {
   return (
     <div className="formCont">
       <h2 className="animate__animated animate__fadeInDown typed">Contact</h2>
-      <h3  className="portfolio">    
+      {/* <h3  className="portfolio">    
       <Typewriter options={{delay: 60, cursor: ""}} onInit={(typewriter)=>typewriter.pauseFor(500).typeString("projects").start()} />
-      </h3>
+      </h3> */}
+      <div className="animate__animated animate__zoomIn line"></div>
+
       <form ref={form} onSubmit={sendEmail}>
         <div className="animate__animated animate__fadeInDown input01">
           <input type="text" name="name" placeholder="Name" required />
