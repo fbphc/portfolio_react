@@ -21,10 +21,11 @@ h2 {
   " a b e" 1fr
   " c c e" 1fr
   / 1fr 1fr 1fr;
-  gap: 1rem;
-  width: 60%;
-  max-width: 50rem;
+  gap: 1.6rem;
+  width: 70%;
+  max-width: 60rem;
   height: 22rem;
+  margin-top: 2rem;
   .box {
     border: 1px solid black;
     overflow: hidden;
@@ -55,7 +56,7 @@ h2 {
       --min: 0.5em; // minimum value
       --val: 1vw; // preferred value = 5% viewport width
       --max: 1.2em; // maximum value
-      color: $bg-color-white;
+      color: $pure-white;
     }
   }
   .box-1 {
@@ -96,7 +97,7 @@ h2 {
     .sub-box-4 {
       width: 100%;
       height: 100%;
-      background: url(../img/05may.png) right / cover no-repeat;
+      background: url(../img/05may.jpg) right / cover no-repeat;
     }
   }
   .box-5 {

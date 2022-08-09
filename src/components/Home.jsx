@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 import { FaFilePdf } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import CV_Fb_2022 from "../pdf/CV_Fb_2022.pdf"
 import "animate.css";
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
             <div className="animate__animated animate__zoomIn line"></div>
           <div className="iconLinks">
             <a
-              href="https://github.com/fbphc"
+              href={CV_Fb_2022}
               target="_blank"
               rel="noreferrer"
               className="animate__animated animate__zoomIn"

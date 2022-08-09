@@ -3,13 +3,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  height: 70%;
+  height: 80%;
   width: 80%;
   max-width: 60rem;
   background-color: $bg-color-black;
   border: 2px solid $bg-color-red;
   border-radius: 1rem;
-  box-shadow: $bg-color-orange 0px 7px 29px 0px;
+  box-shadow: $bg-color-orange 0px 7px 20px 0px;
   position: absolute;
   z-index: 10;
   display: flex;
@@ -18,7 +18,7 @@
   flex-direction: column;
   color: $pure-white;
   text-align: center;
-  padding: 2%;
+  padding: 1.5%;
   div {
     margin: 0.5% 0;
   }
@@ -37,26 +37,45 @@
     --max: 1em; // maximum value
     color: $bg-color-white;
   }
-  .inProgress{
+  .inProgress {
     color: $bg-color-red;
     font-size: 1.2rem;
   }
   .imgCont {
-    width: 75%;
-overflow: hidden;
+    width: 70%;
+    max-height: 60%;
+    overflow: hidden;
+    border-radius: 1%;
+    border: 1px solid $bg-color-orange;
     img {
       width: 100%;
       display: block;
-      border-radius: 1%;
     }
   }
-  .toolsCont {
-    display: flex;
-    .tools {
-      color: $bg-color-red;
-      padding: 0.3rem;
-      margin: 0 1rem;
-      text-transform: uppercase;
+.toolsCont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .tools {
+    color: $bg-color-red;
+    font-size: 1rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+  }
+  }
+  .ext-linkContainer {
+    margin-top: 1rem;
+    .ext-link {
+      margin: 0 2rem;
+      transition: all 0.4s;
+      font-size: 1.2rem;
+      color: $bg-color-white;
+      border: 1px solid $bg-color-orange;
+      padding: 0.4rem 2.2rem 0.1rem;
+    }
+    .ext-link:hover{
+      color: $bg-color-orange;
+      border-color: $bg-color-white;
     }
   }
 }

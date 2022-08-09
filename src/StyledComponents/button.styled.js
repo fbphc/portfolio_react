@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const ButtonStyled = styled.button`
 border: 2px solid rgba(253, 171, 108, 0.753);
 padding: 0.3rem 0.5rem;
@@ -34,3 +36,4 @@ margin-top: 1rem;
       left: 0;
     }
 `;
+
