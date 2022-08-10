@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+    
+  .navbar {
+    .fabars{
+        display: block;
+        color: $bg-color-orange;
+        background-color: $bg-color-black-light;
+
+        border-radius: 20%;
+        padding: 0.5rem;
+        font-size: 3rem;
+        z-index: 10;
+        transition: 0.2s all;
+        &:active{
+            transform: rotate(180deg) scale(1.5);
+        }
+    }
+    
+   
+    .mobile-links{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        background: url(../img/abstract002x.jpg) center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+    }
+    
+    .hidden{
+        display: none;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  .projects-grid {
+    grid-template:
+      " a a b b " 1fr
+      " a a b b" 1fr
+      " c c e e " 1fr
+      " d d e e " 1fr
+      / 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+  }
+}

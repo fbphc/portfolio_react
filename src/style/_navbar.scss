@@ -4,6 +4,11 @@
   align-items: center;
   padding: 0.5rem 1rem;
   background-color: $bg-color-black-lighter;
+  position: relative;
+  height: 3rem;
+  .fabars{
+    display: none;
+  }
   .logo {
     margin-top: 0.2rem;
     width: 4.5rem;
