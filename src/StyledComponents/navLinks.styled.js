@@ -34,5 +34,7 @@ export const NavLinks = styled(Link)`
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem 1rem;
+    margin: 4rem;
+    font-size: 2rem;
   }
 `;
