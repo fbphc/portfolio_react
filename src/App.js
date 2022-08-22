@@ -2,7 +2,6 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 import Home from "./components/Home";
 
@@ -19,7 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
-      <Footer />
+     
     </div>
   );
 }
