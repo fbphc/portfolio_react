@@ -19,7 +19,7 @@ h2 {
   grid-template:
   " a b d" 1fr
   " a b e" 1fr
-  " c c e" 1fr
+  " c f e" 1fr
   / 1fr 1fr 1fr;
   gap: 1.6rem;
   width: 70%;
@@ -67,7 +67,7 @@ h2 {
     .sub-box-1 {
       width: 100%;
       height: 100%;
-      background: url(../img/01mini.gif) left / cover no-repeat;
+      background: url(../img/02sight.gif) left / cover no-repeat;
     }
   }
   .box-2 {
@@ -77,12 +77,12 @@ h2 {
     .sub-box-2 {
       width: 100%;
       height: 100%;
-      background: url(../img/02sight.gif) center / cover no-repeat;
+      background: url(../img/06evcon.gif) center / cover no-repeat;
     }
   }
   .box-3 {
     grid-area: c;
-    -webkit-animation-delay: 2.2s;
+    -webkit-animation-delay: 2.4s;
 
     .sub-box-3 {
       width: 100%;
@@ -97,7 +97,7 @@ h2 {
     .sub-box-4 {
       width: 100%;
       height: 100%;
-      background: url(../img/05may.jpg) right / cover no-repeat;
+      background: url(../img/01mini.gif) right / cover no-repeat;
     }
   }
   .box-5 {
@@ -109,6 +109,16 @@ h2 {
       width: 100%;
       height: 100%;
       background: url(../img/04bur.gif) center / cover no-repeat;
+    }
+  }
+  .box-6 {
+    grid-area: f;;
+    -webkit-animation-delay: 2.2s;
+
+    .sub-box-6 {
+      width: 100%;
+      height: 100%;
+      background: url(../img/07exgen.gif) center / cover no-repeat;
     }
   }
 }

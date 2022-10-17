@@ -9,11 +9,12 @@ import a01 from "../img/01mini.gif";
 import a02 from "../img/02sight.gif";
 import a03 from "../img/03bulls.gif";
 import a04 from "../img/04bur.gif";
-import a05 from "../img/05may.jpg";
+import a06 from "../img/06evcon.gif";
+import a07 from "../img/07exgen.gif";
 
 
 function ProjectCard({ props }) {
-  const imgArray = [a01, a02, a03, a05, a04];
+  const imgArray = [a02, a06, a03, a01, a04, a07];
 
   return (
     <>
@@ -26,7 +27,6 @@ function ProjectCard({ props }) {
           <img src={imgArray[props.id - 1]} alt="project" />
         </div>
         <div>
-         {/*  {props.inProgress && <p className="inProgress">In Progress</p>} */}
           <p>{props.description}</p>
         </div>
         <div className="toolsCont">

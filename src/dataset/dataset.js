@@ -1,15 +1,6 @@
 export const proArray = [
   {
     id: 1,
-    title: "Minigame",
-    subTitle: "Rock, Scissor, Paper",
-    description: "A Classic game played against the computer",
-    extLink: "https://fbphc.github.io/Rock_Paper_Scissors/",
-    info: ["Javascript", "Sass", "HTML5"],
-    github: "https://github.com/fbphc/Rock_Paper_Scissors",
-  },
-  {
-    id: 2,
     title: "Sighspot",
     subTitle: "Movie Finder",
     description: "Full-stack application to find movies and exchange of views ",
@@ -26,6 +17,22 @@ export const proArray = [
     inProgress: "true",
   },
   {
+    id: 2,
+    title: "EV-Connection",
+    subTitle: "Green Networking",
+    description: "Full-stack application to connect owners of EV",
+    extLink: "https://evconnection.herokuapp.com/",
+    info: [
+      "ReactJs",
+      "Reactstrap",
+      "Styled Components",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+    ],
+    github: "https://github.com/fbphc/ev-connection",
+  },
+  {
     id: 3,
     title: "Shrugman / Bulls and Cows",
     subTitle: "NodeJs games",
@@ -35,11 +42,12 @@ export const proArray = [
   },
   {
     id: 4,
-    title: "E-carz",
-    subTitle: "DCI Final Project",
-    description: "Full stack app for E-cars owners ",
-    info: ["react", "express", "mongoDB", "JSON Web Token", "styled-components"],
-    inProgress: "true",
+    title: "Minigame",
+    subTitle: "Rock, Scissor, Paper",
+    description: "A Classic game played against the computer",
+    extLink: "https://fbphc.github.io/Rock_Paper_Scissors/",
+    info: ["Javascript", "Sass", "HTML5"],
+    github: "https://github.com/fbphc/Rock_Paper_Scissors",
   },
   {
     id: 5,
@@ -47,6 +55,16 @@ export const proArray = [
     description: "Restaurant Layout - Template",
     info: ["sass", "HTML5"],
     github: "https://github.com/fbphc/benny",
+
+  },
+  {
+    id: 6,
+    title: "Excuse Gen V1",
+    subTitle: "Excuses always Ready ;)",
+    description: "Frontend App to fetch or create excuses",
+    extLink: "https://excuses-generatorv1.netlify.app",
+    info: ["ReactJS", "React-Bootstrap", "HTML5", "CSS"],
+    github: "https://github.com/fbphc/excuse_generator",
 
   },
 ];

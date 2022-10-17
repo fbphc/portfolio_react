@@ -203,7 +203,7 @@ h2 {
 .projects-grid {
   display: -ms-grid;
   display: grid;
-  grid-template: " a b d" 1fr " a b e" 1fr " c c e" 1fr / 1fr 1fr 1fr;
+  grid-template: " a b d" 1fr " a b e" 1fr " c f e" 1fr / 1fr 1fr 1fr;
   gap: 1.6rem;
   width: 70%;
   max-width: 60rem;
@@ -269,7 +269,7 @@ h2 {
 .projects-grid .box-1 .sub-box-1 {
   width: 100%;
   height: 100%;
-  background: url(../img/01mini.gif) left/cover no-repeat;
+  background: url(../img/02sight.gif) left/cover no-repeat;
 }
 
 .projects-grid .box-2 {
@@ -280,12 +280,12 @@ h2 {
 .projects-grid .box-2 .sub-box-2 {
   width: 100%;
   height: 100%;
-  background: url(../img/02sight.gif) center/cover no-repeat;
+  background: url(../img/06evcon.gif) center/cover no-repeat;
 }
 
 .projects-grid .box-3 {
   grid-area: c;
-  -webkit-animation-delay: 2.2s;
+  -webkit-animation-delay: 2.4s;
 }
 
 .projects-grid .box-3 .sub-box-3 {
@@ -302,7 +302,7 @@ h2 {
 .projects-grid .box-4 .sub-box-4 {
   width: 100%;
   height: 100%;
-  background: url(../img/05may.jpg) right/cover no-repeat;
+  background: url(../img/01mini.gif) right/cover no-repeat;
 }
 
 .projects-grid .box-5 {
@@ -315,6 +315,17 @@ h2 {
   width: 100%;
   height: 100%;
   background: url(../img/04bur.gif) center/cover no-repeat;
+}
+
+.projects-grid .box-6 {
+  grid-area: f;
+  -webkit-animation-delay: 2.2s;
+}
+
+.projects-grid .box-6 .sub-box-6 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/07exgen.gif) center/cover no-repeat;
 }
 
 .proCardComp {
