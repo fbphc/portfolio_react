@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 import { FaFilePdf } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import CV_Fb_2022 from "../pdf/CV_Fb_2022.pdf"
+import CV_Fb_2022 from "../pdf/Fabio_Petrella_CV.pdf"
 import "animate.css";
 
 function Home() {
