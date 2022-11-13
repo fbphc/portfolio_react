@@ -38,16 +38,18 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-size: 1rem;
     }
 
   }
   .projects-grid {
+   width: 95%;
+  height: 100%;
     grid-template:
-      " a a b b " 1fr
-      " a a b b" 1fr
-      " c c e e " 1fr
-      " d d e e " 1fr
-      / 1fr 1fr 1fr 1fr;
+    " a b " 1fr
+    " c d " 1fr
+    " f e" 1fr
+    / 1fr 1fr;
     gap: 1rem;
     margin: 1rem;
   }

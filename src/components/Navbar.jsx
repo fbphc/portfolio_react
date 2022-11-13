@@ -28,7 +28,7 @@ function Navbar() {
                   : () => setMobileMenu("visible")
               }
             >
-              About Me
+              About
             </NavLinks>
             <NavLinks
               to="/projects"
